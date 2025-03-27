@@ -1,0 +1,52 @@
+# Python
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+__pycache__/
+*.py[cod]
+*$py.class
+.python-version
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+api.log
+
+# Data files
+*.pkl
+*.pickle
+*.index
+*.bin
+*.data
+faiss_index.index
+function_data.pkl
+
+# Build/compiled files
+build/
+dist/
+*.egg-info/
+*.so
+
+# Test/coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.test
+secrets.ini
+
+# OS generated
+.DS_Store
+Thumbs.db
