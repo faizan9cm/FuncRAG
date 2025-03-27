@@ -14,6 +14,9 @@ The LLM + RAG Function Execution API is an innovative Python-based service that 
 
 At its heart, this project transforms natural language requests like "Open Chrome browser" or "Check CPU usage" into dynamically generated Python code that executes the corresponding actions. The system leverages vector similarity search to match user prompts with the most relevant pre-registered functions from its automation library.
 
+![Demo Animation](assets/demo.png)  
+_End-to-end system workflow demonstration_
+
 ## 📌 Table of Contents
 
 - [Approach](#-approach)
@@ -89,6 +92,9 @@ This project combines several modern AI/ML techniques:
    - Maintains conversation history
    - Enables contextual follow-ups
 
+![Built-in Execution](assets/built-in-execution.png)  
+_Example: Executing a built-in system monitoring function_
+
 ## ✨ Features
 
 - **Predefined Automation Functions**:
@@ -142,6 +148,9 @@ python main.py
    -H "Content-Type: application/json" \
    -d '{"prompt": "Check CPU usage"}'
 
+![Subsequent Execution](assets/subsequent-built-in-execution.png)  
+_Follow-up command in the same session_
+
 ## 🌐 API Endpoints
 
 | Endpoint                | Method | Description                                       |
@@ -180,6 +189,9 @@ curl -X POST "http://localhost:8000/register_function" \
 }'
 ```
 
+![Registering Custom Function](assets/registering-custom-function.png)  
+_Registering a new greeting function via API_
+
 ### 2. Execute a custom Function
 
 ```bash
@@ -188,11 +200,17 @@ curl -X POST "http://localhost:8000/execute" \
 -d '{"prompt": "Greet my friend Sarah"}'
 ```
 
+![Custom Execution](assets/custom-execution.png)  
+_Executing the newly registered custom function_
+
 ### 3. View Session History
 
 ```bash
 curl "http://localhost:8000/session/YOUR_SESSION_ID"
 ```
+
+![Session History](assets/session-history.png)  
+_Viewing complete interaction history for a session_
 
 ## 🔧 Extensibility
 
